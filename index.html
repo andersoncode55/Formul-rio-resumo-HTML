@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Formulário</h1>
+    </div>
+
+
+
+<br><br>
+<!--Form -->
+ <form></form>
+<!--A tag <form> é usada em HTML para criar um formulário que pode ser preenchido pelos usuários. O formulário pode conter vários campos de entrada, como caixas de texto, botões de opção, caixas de seleção, entre outros.-->
+<!--O formulário pode ser submetido para um servidor web que processa os dados enviados pelo usuário.-->
+<!--Para isso, usamos o atributo action da tag <form> para especificar o endereço URL do servidor que irá processar o formulário.-->
+<!--Além disso, podemos usar o atributo method para especificar o método HTTP que será usado para enviar os dados do formulário para o servidor, que geralmente é o método POST.-->
+
+
+
+
+<br><br>
+<!--Label-->
+<!--Atributo name-->
+<label for="nome">Nome:</label>
+<input type="text" id="nome" name="nome">
+<!--A tag <label> é usada em HTML para criar um rótulo associado a um campo de entrada, como um campo de texto, caixa de seleção ou botão de opção.-->
+<!--O rótulo ajuda a identificar o campo de entrada e fornece informações adicionais sobre o que deve ser inserido no campo.-->
+<!--O rótulo geralmente é associado ao campo de entrada usando o atributo for, que deve ter o mesmo valor do atributo id do campo de entrada.-->
+<!-- Isso permite que os usuários cliquem no rótulo para selecionar o campo de entrada correspondente, melhorando a usabilidade do formulário.-->
+
+
+
+
+<br><br>
+<!--Tag input-->
+<!--Atributo ID-->
+<!--Atributo placeholder-->
+<label for="nome1">Nome:</label>
+<input type="text" id="nome1" name="nome" placeholder="Digite o seu nome">
+<!--A tag <input> é usada em HTML para criar um campo de entrada que pode ser preenchido pelo usuário.-->
+<!--O atributo id é usado para identificar o campo de entrada e o atributo type é usado para especificar o tipo de campo de entrada que deve ser criado.-->
+<!-- O atributo placeholder é usado para fornecer uma dica de texto para o usuário sobre o que deve ser inserido no campo.-->
+
+
+
+<br><br>
+<!--Exemplos de uso:-->
+<label for="nome2">Nome:</label>
+<input type="text" id="nome2" name="nome" placeholder="Digite o seu nome">
+<!--Neste exemplo, criamos um campo de entrada do tipo texto com o atributo id="nome" e o atributo name="nome", que é usado para enviar o valor do campo para o servidor.-->
+<!--O atributo placeholder fornece uma dica de texto para o usuário que diz "Digite o seu nome".-->
+
+
+
+<br><br>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="Digite o seu email">
+<!--Neste exemplo, criamos um campo de entrada do tipo email com o atributo id="email" e o atributo name="email", que é usado para enviar o valor do campo para o servidor.-->
+<!--O atributo placeholder fornece uma dica de texto para o usuário que diz "Digite o seu email".-->
+
+
+
+<br><br>
+<label for="senha">Senha:</label>
+<input type="password" id="senha" name="senha" placeholder="Digite a sua senha">
+<!--Neste exemplo, criamos um campo de entrada do tipo password com o atributo id="senha" e o atributo name="senha", que é usado para enviar o valor do campo para o servidor.-->
+<!-- O atributo placeholder fornece uma dica de texto para o usuário que diz "Digite a sua senha".-->
+<!--Ao contrário do campo de entrada de texto normal, o campo de senha exibe asteriscos ou pontos em vez do texto digitado pelo usuário, para proteger a privacidade da senha.-->
+
+
+
+
+
+
+
+
+
+
+
+
+<form>
+    <label for="nome3">Nome:</label>
+    <input type="text" id="nome3" name="nome" required>
+    
+
+
+
+
+
+
+<label for="email3">Email:</label>
+<input type="email" id="email3" name="email" required>
+<!--O atributo required é usado para especificar que o campo de entrada associado ao botão de envio é obrigatório e não pode ser deixado em branco pelo usuário antes do envio do formulário.-->
+
+
+
+
+
+  
+
+
+<input type="submit" value="Enviar">
+</form>
+<!--A tag <input> com o atributo type="submit" é usada em HTML para criar um botão de envio em um formulário HTML. Quando o botão é clicado, os dados do formulário são enviados ao servidor para processamento.-->
+<!--O botão de envio tem o atributo type="submit", que indica que esse botão é usado para enviar o formulário ao servidor quando clicado.-->
+<!--O atributo value="Enviar" especifica o texto exibido no botão de envio.-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Radio-->
+<!--O elemento "radio" em HTML é um tipo de input utilizado em formulários para permitir que o usuário selecione uma opção única entre um conjunto de opções.-->
+<!--Ele é representado por um círculo vazio que, quando selecionado, é preenchido com um ponto.-->
+<!--O elemento radio é definido por meio da tag <input>, com o atributo "type" definido como "radio". Cada opção de seleção deve ter um atributo "name" igual, para que o navegador possa identificar que todas as opções pertencem ao mesmo conjunto.-->
+<!--Exemplo de código HTML:-->
+<form>
+    <input type="radio" name="opcao" value="opcao1" id="opcao1">
+    <label for="opcao1">Opção 1</label><br>
+    <input type="radio" name="opcao" value="opcao2" id="opcao2">
+    <label for="opcao2">Opção 2</label><br>
+    <input type="radio" name="opcao" value="opcao3" id="opcao3">
+    <label for="opcao3">Opção 3</label><br>
+  </form>
+<!--Neste exemplo, temos um conjunto de opções de seleção representado por três elementos radio, com o atributo "name" igual a "opcao". Cada opção tem um valor atribuído ao atributo "value", que é enviado para o servidor quando o formulário é submetido. -->
+<!--O atributo "id" é utilizado para associar cada elemento radio à sua respectiva label, que é clicável e permite selecionar a opção correspondente.-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Checkbox é um elemento de formulário em HTML que permite aos usuários selecionar uma ou várias opções de uma lista.-->
+<!--É representado por um pequeno quadrado que pode ser marcado ou desmarcado pelo usuário.-->
+<!--O elemento de input do tipo checkbox pode ser adicionado a um formulário HTML usando a tag <input> e o atributo type="checkbox".-->
+<!--A sintaxe básica é a seguinte:-->
+<input type="checkbox" name="opcao1" value="valor1"> Opção 1
+<!--Onde:-->
+<!--type="checkbox" define o tipo do elemento como checkbox.-->
+<!--name="opcao1" define o nome da opção selecionada.-->
+<!--"Opção 1" é o texto exibido ao lado do checkbox.-->
+
+<!--Os usuários podem clicar no checkbox para selecioná-lo ou desmarcá-lo. O valor do checkbox será enviado para o servidor quando o formulário for submetido, se o checkbox estiver selecionado.-->
+<!--Se o checkbox não estiver selecionado, nenhum valor será enviado para o servidor.-->
+
+<!--Você também pode pré-selecionar um checkbox definindo o atributo checked. Por exemplo: -->
+<input type="checkbox" name="opcao1" value="valor1" checked> Opção 1
+<!--Este checkbox será pré-selecionado por padrão quando a página for carregada.-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--A tag <select> em HTML é usada para criar um elemento de seleção, também conhecido como caixa de seleção, que permite aos usuários escolher uma opção a partir de uma lista suspensa de opções.-->
+<!-- A sintaxe básica da tag <select> é a seguinte: -->
+    <select>
+        <option value="opcao1">Opção 1</option>
+        <option value="opcao2">Opção 2</option>
+        <option value="opcao3">Opção 3</option>
+        ...
+      </select>
+<!--Dentro da tag <select>, você pode adicionar uma ou mais tags <option>, cada uma representando uma opção na lista suspensa.-->
+<!--O atributo value da tag <option> define o valor da opção selecionada e o texto dentro da tag é o rótulo da opção que será exibido para o usuário.-->
+
+<!--Quando o usuário seleciona uma opção, o valor da opção selecionada é enviado para o servidor quando o formulário é submetido.-->
+<!--Você pode acessar o valor selecionado no lado do servidor usando a linguagem de programação usada para processar o formulário. -->
+
+<!--Você também pode definir uma opção selecionada por padrão, adicionando o atributo selected a uma das tags <option>. Por exemplo:-->
+    <select>
+        <option value="opcao1">Opção 1</option>
+        <option value="opcao2" selected>Opção 2</option>
+        <option value="opcao3">Opção 3</option>
+        ...
+      </select>
+<!--Neste exemplo, a opção 2 será selecionada por padrão quando a página for carregada.-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--A tag <textarea> em HTML é usada para criar uma área de texto editável onde os usuários podem digitar ou colar texto.-->
+<!-- A tag <textarea> é usada principalmente em formulários HTML para permitir aos usuários inserir texto longo, como comentários ou mensagens.-->
+<!--A sintaxe básica da tag <textarea> é a seguinte: -->
+<textarea name="comentario" rows="4" cols="40"></textarea>
+
+<!-- Onde: -->
+<!--name="comentario" define o nome da área de texto.-->
+<!--rows="4" define o número de linhas de texto que serão exibidas na área de texto.-->
+<!--cols="40" define o número de colunas de texto que serão exibidas na área de texto.-->
+
+<!--Quando o usuário digita ou cola texto na área de texto, o texto digitado é enviado para o servidor quando o formulário é submetido.-->
+<!--Você pode acessar o texto digitado no lado do servidor usando a linguagem de programação usada para processar o formulário.-->
+<!--Você pode pré-preencher a área de texto com texto padrão adicionando o texto dentro da tag <textarea>. Por exemplo:-->
+<textarea name="comentario" rows="4" cols="40">Digite seu comentário aqui...</textarea>
+<!--Neste exemplo, o texto "Digite seu comentário aqui..." será exibido na área de texto por padrão quando a página for carregada.-->
+<!--Quando o usuário clicar na área de texto, o texto padrão será substituído pelo texto digitado ou colado pelo usuário.-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+</body>
+</html>
